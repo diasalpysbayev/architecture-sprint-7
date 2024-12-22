@@ -1,0 +1,10 @@
+# role-admin.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: admin
+rules:
+- apiGroups: [""]
+  resources: ["*"]
+  verbs: ["*"]
+
